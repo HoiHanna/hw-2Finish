@@ -11,7 +11,8 @@ class NameEncoderDecoder {
      public String decode(String name) {
        String decodeCut1 = name.replace ("YESNOTFORYOU","");
        String decodeCut2 = decodeCut1.replace ("NOTFORYOU","");
-       String decode = decodeCut2.replace("1", "e")
+       String decode = decodeCut2
+                .replace("1", "e")
                 .replace("2", "u")
                 .replace("3", "i")
                 .replace("4", "o")
